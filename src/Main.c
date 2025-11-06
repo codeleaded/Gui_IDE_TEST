@@ -38,7 +38,7 @@ void Button_React_Load(Button *b,ButtonEvent *be){
 }
 
 void Setup(AlxWindow* w){
-    editor = TextBox_New(Input_New(50,INPUT_MAXLENGTH),(Rect){ { 0.0f,0.0f },{ GetWidth(),GetHeight() } },ALXFONT_PATHS_HIGH,16,32,BLACK);
+    editor = TextBox_New(Input_New(50,INPUT_MAXLENGTH),(Rect){ { 0.0f,0.0f },{ GetWidth(),GetHeight() } },ALXFONT_PATHS_HIGH,32,64,BLACK);
     TextBox_SetSyntax(&editor,C_SYNTAX);
 
     btn_save = Button_New(NULL,"Save",Button_React_Save,AlxFont_New(ALXFONT_HIGH),(Vec2){ 16,32 },(Rect){ { GetWidth() - 240.0f,10.0f },{ 110.0f,40.0f } },ALIGN_BORDER,0xFF00FF00,0xFFFFFFFF);
